@@ -7,15 +7,16 @@
             "range": "[2, inf)"
         },
         "n_rounds": {
-            "description": "Number of rounds until the game is finished",
+            "description": "Number of rounds until the game finishes",
             "type": "int",
             "range": "[1, inf)"
         }
     },
     "scoring": {
         "objective": "maximize",
-        "points_type": "bool",
-        "points_value": 1,
+        "rounds_aggregation": "sum",
+        "rounds_aggregation_initial": 0,
+        "points_type": "int",
         "settings": [
             "early_ending"
         ]
