@@ -17,7 +17,6 @@
         "points_type": "bool",
         "points_value": 1,
         "settings": [
-            "winner_gets_all",
             "early_ending"
         ]
     }
