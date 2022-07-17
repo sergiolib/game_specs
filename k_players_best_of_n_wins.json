@@ -1,24 +1,25 @@
 {
-    "description": "{n_players} players play {n_rounds} rounds of guessing which is the correct number in each round",
-    "input_parameters": {
-        "n_players": {
-            "description": "Number of players",
-            "type": "int",
-            "range": "[2, inf)"
-        },
-        "n_rounds": {
-            "description": "Number of rounds until the game finishes",
-            "type": "int",
-            "range": "[1, inf)"
-        }
+  "name": "Guess the number",
+  "description": "{n_players} players play {n_rounds} rounds of guessing which is the correct number in each round",
+  "input_parameters": {
+    "n_players": {
+      "description": "Number of players",
+      "type": "int",
+      "range": "[2, inf)"
     },
-    "scoring": {
-        "objective": "maximize",
-        "rounds_aggregation": "sum",
-        "rounds_aggregation_initial": 0,
-        "points_type": "int",
-        "settings": [
-            "early_ending"
-        ]
+    "n_rounds": {
+      "description": "Number of rounds until the game finishes",
+      "type": "int",
+      "range": "[1, inf)"
     }
+  },
+  "scoring": {
+    "objective": "maximize",
+    "rounds_aggregation": "sum",
+    "rounds_aggregation_initial": 0,
+    "points_type": "int",
+    "settings": [
+      "early_ending"
+    ]
+  }
 }
