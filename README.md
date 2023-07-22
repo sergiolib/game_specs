@@ -1,2 +1,2 @@
-# game_structures
-Structures for games to include in the Scoring backend.
+# Games specifications
+Specification files in JSON for games to be available in the Scoring backend.
